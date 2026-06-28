@@ -1,11 +1,11 @@
 # US Savings Bond Data Extractor
 
-This script automates the extraction of structured data from photos of US Savings Bonds using Google's **Gemini 3.5 Flash** AI model. It processes a folder of images (including skewed or upside-down iPhone photos) and exports the details into a clean Excel (`.xlsx`) spreadsheet.
+This script automates the extraction of structured data from photos of US Savings Bonds using Google's **Gemini 3.1 Flash Lite** AI model. It processes a folder of images (including skewed or upside-down iPhone photos) and exports the details into a clean Excel (`.xlsx`) spreadsheet.
 
 ## Features
 
 - **High-Accuracy Extraction:** Extracts Serial Number, Series, Denomination, Issue Date, Owner Names, Co-Owner, Address, and Notes.
-- **Multimodal AI:** Utilizes Gemini 3.5 Flash to automatically interpret skewed, rotated, or upside-down images without needing complex computer vision pre-processing.
+- **Multimodal AI:** Utilizes Gemini 3.1 Flash Lite to automatically interpret skewed, rotated, or upside-down images without needing complex computer vision pre-processing.
 - **Strict JSON Parsing:** Uses Pydantic to enforce a strict structured response schema, guaranteeing clean spreadsheet columns.
 - **Predictable Sorting:** Images are automatically processed in alphabetical order, and the final exported Excel rows are also sorted alphabetically by filename for easy auditing.
 - **Dual Processing Modes:**
