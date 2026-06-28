@@ -82,7 +82,7 @@ To resume:
 - **`No module named ...` or `Unable to import ...`**
   Ensure you ran the `pip install` command in the same Python environment that you are using to run the script.
 - **`Error: APIError - 429 RESOURCE_EXHAUSTED`**
-  You have hit your Google API quota. If you are on the free tier, wait a few minutes (or until tomorrow if you hit the daily limit) and run the script again to resume. 
+  You have hit your Google API quota. If you are on the free tier, wait a few minutes (or until tomorrow if you hit the daily limit) and run the script again to resume.
 - **`Failed to initialize Gemini Client.`**
   Your `GEMINI_API_KEY` was not found. Make sure you exported the environment variable exactly as shown in the Configuration section before running the script.
 
@@ -100,7 +100,7 @@ pip uninstall -y google-genai pydantic pandas openpyxl tqdm
 **Remove the API Key from your current session:**
 - **PowerShell:**
   ```powershell
-  Remove-Item Env:\GEMINI_API_KEY
+  $env:GEMINI_API_KEY=""
   ```
 - **Command Prompt (cmd):**
   ```cmd
