@@ -65,7 +65,7 @@ def process_image(image_path: str, client: genai.Client) -> dict:
         for attempt in range(max_retries):
             try:
                 response = client.models.generate_content(
-                    model='gemini-3.5-flash', # Try 'gemini-2.5-flash' or 'gemini-1.5-flash' if 3.5 continues to fail
+                    model='gemini-3.1-flash-lite', # Try 'gemini-2.5-flash' or 'gemini-1.5-flash' if 3.5 continues to fail
                     contents=[image_part, prompt],
                     config=types.GenerateContentConfig(
                         response_mime_type="application/json",
